@@ -1,0 +1,416 @@
+body {
+    padding-top: 40px;
+    background-color: #ececec;
+    height: 5000px;
+}
+::-webkit-scrollbar {
+    width: 20px;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #cf242f;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #cf242f;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #cf242f;
+    border-radius: 20px;
+    border: 8px solid transparent;
+    background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #cf242f;
+}
+::-webkit-scrollbar-track {
+    background: #FFF;
+}
+/**
+    START OVERRIDING BOOTSTRAP
+ */
+
+/* NAVBAR */
+.navbar {
+    background-color: #000 !important;
+    background: linear-gradient(rgba(207,36,47,0) 68%,rgba(207,36,47,.25));
+    border-bottom: 1px solid #cf242f;
+    min-width: 45px;
+    padding-right: 0;
+    padding-left: 25px;
+}
+.nav-item {
+    text-align: center;
+}
+.nav-link:hover {
+    color: #ffba68!important;
+}
+/* ACTIVE LINK */
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #ffba68;
+}
+/* NAVBAR LINK */
+.navbar-dark .navbar-nav .nav-link {
+    color: #FFF;
+    font-weight: bold;
+    padding: 10px 15px!important;
+    font-size: 13px;
+    text-transform: uppercase!important;
+}
+/* BRAND NAME */
+.navbar-dark .navbar-brand {
+    color: #FFF;
+    font-size: 30px;
+    line-height: 30px;
+}
+.navbar-dark .navbar-brand span {
+    color: #d30000;
+}
+.play-btn {
+    color: #FFF;
+    background-color: #d30000;
+    border-left: 1px solid #FFF;
+    font-size: 12px!important;
+}
+.play-btn .nav-link:hover {
+    color: #FFF!important;
+}
+/* DROPDOWN MENU */
+.dropdown-menu {
+    background-color: #000 !important;
+    border-top: 3px solid #cf242f;
+    min-width: 175px;
+    padding: 0;
+    margin: 0;
+}
+.dropdown-item {
+    color: #FFF;
+    padding: 7px 20px;
+    -webkit-transition: padding 0.5s ease;
+    -moz-transition: padding 0.5s ease;
+    -o-transition: padding 0.5s ease;
+    transition: padding 0.5s ease;
+    border-top: 1px solid #FFF;
+    font-size: 14px;
+    text-transform: uppercase!important;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: #111;
+    color: #ffba68;
+    padding-left: 25px;
+}
+/* CAROUSEL */
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+.carousel-caption {
+    width: 100%;
+    padding-bottom: 50px;
+    padding-left: 150px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: left;
+    background: linear-gradient(rgba(255,0,0,0), rgb(0, 0, 0));
+    font-weight: bold;
+}
+.carousel-caption h1 {
+    text-transform: uppercase;
+    padding-bottom: 12px;
+}
+.carousel-caption p {
+    font-size: 18px;
+}
+.caption-btn {
+    color: #FFF;
+    background-color: #d30000;
+    border: none;
+    text-transform: uppercase;
+    padding: 8px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.carousel-indicators li {
+    border-radius: 10px;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    margin: 10px;
+}
+.carousel-indicators .active {
+    background-color: #fff;
+}
+
+/*STORY*/
+.story {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.story h1 {
+    color: #d30000;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.story .lead {
+    color: #000;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: .05em;
+    line-height: 30px;
+    margin: 0 auto 16px;
+}
+.download-btn {
+    color: #FFF;
+    background-color: #d30000;
+    border: none;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transform: skew(-25deg);
+    margin-top: 20px;
+}
+.download-btn span {
+    display: inline-block;
+    transform: skew(25deg);
+}
+/*WARFRMES*/
+.warframes {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.warframes h1 {
+    color: #d30000;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    font-size: 30px;
+}
+.warframes .warframes-title {
+    margin-bottom: 40px;
+}
+.warframes .warframes-title div {
+    margin: auto 0;
+}
+.double-lines {
+    padding: 1px 0;
+    border-top: 1px solid #d30000;
+    border-bottom: 1px solid #d30000;
+    margin: auto 0;
+}
+.warframes .warframes-item img {
+    border-bottom: 1px solid #d30000;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+.warframes .warframes-item img:hover ~ p, .warframes .warframes-item p:hover {
+    color: #d30000;
+    background-color: #FFF;
+    cursor: pointer;
+}
+.warframes .warframes-item p {
+    position: absolute;
+    bottom: 0;
+    color: #FFF;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    background-color: #d30000;
+    font-size: 12px;
+    width: 50%;
+    text-align: left;
+    margin: 0!important;
+}
+/*.warframes .warframes-item div {*/
+    /*margin-bottom: 40px;*/
+/*}*/
+/*QUESTS*/
+.quests {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.quests h1 {
+    color: #d30000;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 40px;
+}
+.quests h3 {
+    font-weight: bold;
+    font-size: 30px;
+}
+.quests h6 {
+    font-weight: bold;
+    font-size: 20px;
+}
+.quests .lead {
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: .05em;
+    line-height: 30px;
+    margin: 0 auto 16px;
+}
+.quests span {
+    font-size: 16px;
+}
+.quests .carousel-indicators {
+    position: static;
+    padding-top: 16px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 40px;
+}
+.quests .carousel-indicators li {
+    border-radius: 10px;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #d30000;
+    background-color: transparent;
+    margin: 10px;
+    text-indent: 0;
+}
+.quests .carousel-indicators .active {
+    background-color: #d30000;
+}
+.quests .carousel-inner {
+    min-height: 225px;
+    display: flex;
+    align-items: center;
+}
+.quests .carousel-inner h3{
+    margin-bottom: 16px;
+}
+/*PLATINUM*/
+.platinum {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.platinum h1 {
+    color: #d30000;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 40px;
+}
+.platinum div {
+    padding: 5px;
+}
+.platinum .price-box {
+    background: #FFF;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    height: 400px;
+}
+.platinum .price-box:hover p {
+    color: #FFF;
+    background-color: #d30000;
+}
+.platinum .price-box h2 {
+    margin: 5px 0 15px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+.platinum .price-box p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #d30000;
+    padding-bottom: 1px;
+    -webkit-transition-duration: 0.7s;
+    -moz-transition-duration: 0.7s;
+    -o-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+    background-color: #FFF;
+    border: 1px solid #d30000;
+    border-radius: 10px;
+}
+.platinum .price-box ul {
+    text-align: center;
+    line-height: 200%;
+    height: 200px;
+    overflow-y: scroll;
+    font-size: 14px;
+}
+.platinum .price-box a {
+    margin-bottom: 5px;
+    color: #FFF;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 50px;
+    right: 70px;
+    left: 70px;
+}
+/*UPDATES*/
+.updates {
+    background: url("../images/background.png") no-repeat center center fixed;
+    width: 100%;
+    min-height: 500px;
+}
+.updates .platforms {
+    /*background: rgba(2,2,2,0.1);*/
+    color: #FFF;
+    min-height: 500px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.updates .platforms h1 {
+    margin-bottom: 60px;
+}
+.updates .platforms .platform {
+    margin-bottom: 40px;
+}
+.updates .platforms .platform img {
+    margin-bottom: 20px;
+}
+/*SUBSCRIBE*/
+.subscribe {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.subscribe h1 {
+    color: #d30000;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+.subscribe p {
+    margin-bottom: 30px;
+    font-size: 25px;
+    color: #000;
+    text-transform: capitalize;
+}
+.subscribe form {
+    justify-content: center;
+}
+.subscribe .form-control{
+    border-radius: 0;
+    width: 400px;
+    box-shadow: none;
+    margin-right: -1px;
+    color: #000;
+}
+.subscribe .form-control:focus {
+    border-color: #d30000;
+}
+.subscribe button{
+    border-radius: unset;
+    background-color: #d30000;
+    font-weight: bold;
+}

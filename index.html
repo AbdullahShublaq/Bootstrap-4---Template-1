@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+    <!--FIRST MOBILE META-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap 4 - 1</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <!--<link rel="stylesheet" href="css/rtl.css">-->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--START Navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top py-0">
+        <img class="mr-3" src="images/brand.png" alt="">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="gameDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                        game
+                    </a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="gameDropdown">
+                        <a class="dropdown-item" href="#">updates</a>
+                        <a class="dropdown-item" href="#">stories</a>
+                        <a class="dropdown-item" href="#">warframes</a>
+                        <a class="dropdown-item" href="#">factions</a>
+                        <a class="dropdown-item" href="#">quest start guide</a>
+                        <a class="dropdown-item" href="#">download game</a>
+                        <a class="dropdown-item" href="#">companion app</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">videos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">news</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="communityDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                        community
+                    </a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="communityDropdown">
+                        <a class="dropdown-item" href="#">forums</a>
+                        <a class="dropdown-item" href="#">support</a>
+                        <a class="dropdown-item" href="#">referral program</a>
+                        <a class="dropdown-item" href="#">warframe wikia</a>
+                        <a class="dropdown-item" href="#">warframe creators</a>
+                        <a class="dropdown-item" href="#">warframe volunteers</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="storeDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                        store
+                    </a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="storeDropdown">
+                        <a class="dropdown-item" href="#">prime access</a>
+                        <a class="dropdown-item" href="#">prime resurgence</a>
+                        <a class="dropdown-item" href="#">buy platinum</a>
+                        <a class="dropdown-item" href="#">merch store</a>
+                        <a class="dropdown-item" href="#">promo codes</a>
+                        <a class="dropdown-item" href="#">starter pack</a>
+                        <a class="dropdown-item" href="#">supporter packs</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">the new war</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown pr-5">
+                    <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                        english
+                    </a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="languageDropdown">
+                        <a class="dropdown-item" href="#">arabic</a>
+                        <a class="dropdown-item" href="#">franc</a>
+                        <a class="dropdown-item" href="#">japanese</a>
+                        <a class="dropdown-item" href="#">chinese</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">login <i class="bi bi-caret-right-fill"></i></a>
+                </li>
+                <li class="nav-item play-btn">
+                    <a class="nav-link" href="#">play free now</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--END Navbar-->
+
+    <!--START CAROUSEL-->
+    <div id="slide" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#slide" data-slide-to="0" class="active"></li>
+            <li data-target="#slide" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/slider_1.png" class="d-block w-100" alt="Slider 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>devstream 159 overview </h1>
+                    <p>A look to our plans for 2022!</p>
+                    <button class="caption-btn">Learn More</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/slider_2.jpg" class="d-block w-100" alt="Slider 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>the new war</h1>
+                    <p>Available now in all platforms!</p>
+                    <button class="caption-btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END CAROUSEL-->
+
+    <!--START STORY-->
+    <section class="story text-center">
+        <div class="container">
+            <h1>story</h1>
+            <p class="lead">They were called Tenno. Warriors of blade and gun: masters of the Warframe armor. Those that survived the old war were left drifting among the ruins. Now they are needed once more.</p>
+            <p class="lead">The Grineer, with their vast armies, are spreading throughout the solar system. A call echoes across the stars summoning the Tenno to an ancient place. They summon you.</p>
+            <p class="lead">Allow the Lotus to guide you. She has rescued you from your cryostasis chamber and given you a chance to survive. The Grineer will find you; you must be prepared. The Lotus will teach you the ways of the Warframes and the secrets to unlocking their powers.</p>
+            <p class="lead"><strong>COME TENNO, YOU MUST JOIN THE WAR.</strong></p>
+            <button class="download-btn">
+                <span>Download Now</span>
+            </button>
+        </div>
+    </section>
+    <!--END STORY-->
+
+    <!--START WARFRAMES-->
+    <section class="warframes text-center">
+        <div class="container">
+            <div class="row warframes-title">
+                <div class="col-lg-4 col-md-12"><div class="double-lines"></div></div>
+                <div class="col-lg-4 col-md-12"><h1>Warframes</h1></div>
+                <div class="col-lg-4 col-md-12"><div class="double-lines"></div></div>
+            </div>
+            <div class="row warframes-item">
+                <div class="col-lg-4 col-sm-12">
+                    <img src="images/excalibur.png" alt="warframe 1">
+                    <p>Excalibur</p>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <img src="images/mag.png" alt="warframe 3">
+                    <p>mag</p>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <img src="images/volt.png" alt="warframe 3">
+                    <p>volt</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mt-5"><div class="double-lines"></div></div>
+            </div>
+        </div>
+    </section>
+    <!--END WARFRAMES-->
+
+    <!--START QUESTS-->
+    <section class="quests text-center">
+        <div class="container">
+            <h1>quests</h1>
+            <div id="quests-slide" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h3>1. VOR'S PRIZE</h3>
+                        <h6>Wake up, Tenno</h6>
+                        <p class="lead">The Grineer Queens have dispatched the ruthless Captain Vor to grow their empire. Part and parcel of his Mission is the elimination of you, the Tenno threat. Awaken from Cryosleep, rebuild the segments of your Orbiter, and free yourself from Vor’s clutches.</p>
+                        <span class="font-italic font-weight-bold">“For generations you’ve slept, no purpose, no cause to wake you. But now, something has risen from the ruins of the Old War” - Lotus</span>
+                    </div>
+                    <div class="carousel-item">
+                        <h3>2. ONCE AWAKE</h3>
+                        <h6>Investigate the Grineer’s biological experiments</h6>
+                        <p class="lead">According to intercepted messages, the Grineer are experimenting with some sort of biological weapon. Details are sparse, but the messages originated from Mercury. Go there and find out what the Grineer are up to.</p>
+                        <span class="font-italic font-weight-bold">“Additional test Marines have arrived. The [redacted] tore through the previous batch much faster than expected.” - Doctor Tengus</span>
+                    </div>
+                    <div class="carousel-item">
+                        <h3>3. THE ARCHWING</h3>
+                        <h6>Begin your battle against the Balor Fomorian</h6>
+                        <p class="lead">The Grineer have completed construction of their ultimate warship, the Balor Fomorian. As Tenno, you must bring down this metal monstrosity, but you don’t have the necessary tools -- not yet.</p>
+                        <span class="font-italic font-weight-bold">“The Balor Fomorians are coming but you will be ready.” - Lotus</span>
+                    </div>
+                    <div class="carousel-item">
+                        <h3>4. STOLEN DREAMS</h3>
+                        <h6>Track down a thief-for-hire and recover the Arcane Codices</h6>
+                        <p class="lead">The Grineer are searching for the Arcane Codices, mysterious artifacts the Grineer hope will cure their clone defects. But their plans are ruined when a contracted thief named Maroo steals the last Codex and goes into hiding. Tenno, find Maroo and recover the Codices.</p>
+                        <span class="font-italic font-weight-bold">“Hushed and empty is the womb of the sky.” - Unknown</span>
+                    </div>
+                    <div class="carousel-item">
+                        <h3>5. THE NEW STRANGE</h3>
+                        <h6>Uncover the Mystery of Chroma</h6>
+                        <p class="lead">Cephalon Simaris needs your assistance, Tenno. Simaris discovered a curious anomaly on Ceres and dispatched a team of Sentinels to investigate. The Sentinels did not return. It falls to you to investigate this anomaly. Are you ready, Tenno?</p>
+                        <span class="font-italic font-weight-bold">“Here we shall search and find. The eyes of day drinking the night.” - Unknown</span>
+                    </div>
+                    <div class="carousel-item">
+                        <h3>6. NATAH</h3>
+                        <h6>Learn more about the Lotus</h6>
+                        <p class="lead">Strange drones on Uranus will shine a light on Warframe’s biggest mysteries, some of which are answered in this Quest and others remain to be discovered in the cinematic Quests beyond.</p>
+                        <span class="font-italic font-weight-bold">“You want to know why they are here? Cause I found it! The tomb!” - Tyl Regor</span>
+                    </div>
+                    <div class="carousel-item">
+                        <h3>7. THE SECOND DREAM</h3>
+                        <h6>Discover who you really are</h6>
+                        <p class="lead">An ancient threat re-emerges, which pulls back the veil on the Old War, the Tenno and the intricate history of Warframe’s universe.</p>
+                        <span class="font-italic font-weight-bold">“Dream... not of what you are, but of what you want to be.” - The Lotus</span>
+                    </div>
+                    <div class="carousel-item">
+                        <h3>8. THE WAR WITHIN</h3>
+                        <h6>Learn the truth of your past to shape your future</h6>
+                        <p class="lead">As the follow up to The Second Dream, The War Within will take your Tenno on a journey to discover their origins and awaken to their true potential.</p>
+                        <span class="font-italic font-weight-bold">“But the dreamers have awakened. They will come for us.” -Worm Queen</span>
+                    </div>
+                    <div class="carousel-item">
+                        <h3>9. CHAINS OF HARROW</h3>
+                        <h6>Reveal the mysteries behind an abandoned Steel Meridian ship and the horrors that lie within.</h6>
+                        <p class="lead">Chains of Harrow is one of Warframe’s darkest Quests yet. Follow the source of a mysterious transmission to an abandoned Steel Meridian ship and learn more about the one they call Rell.</p>
+                        <span class="font-italic font-weight-bold">“Rap. Tap. Tap.” - ???</span>
+                    </div>
+                    <div class="carousel-item">
+                        <h3>10. APOSTASY PROLOGUE</h3>
+                        <h6>How long have we waited for this moment?</h6>
+                        <p class="lead">You’ve started on the warrior’s path. You know what happened aboard the Zariman Ten-Zero. Now it’s time to learn the true nature of your most revered ally.</p>
+                        <span class="font-italic font-weight-bold">“My daughters... sons, I want you to know my last thoughts are of you.” -Margulis</span>
+                    </div>
+                    <div class="carousel-item">
+                        <h3>11. THE SACRIFICE</h3>
+                        <h6>Lua’s secrets rarely stay buried for long.</h6>
+                        <p class="lead">A foreboding vision leads the Tenno on a hunt for a savage Warframe.</p>
+                        <span class="font-italic font-weight-bold">“Howl all you want, it won't bring him back.”</span>
+                    </div>
+                    <div class="carousel-item">
+                        <h3>12. CHIMERA PROLOGUE</h3>
+                        <h6>A reunion with an old enemy will have unknown consequences for the Origin System.</h6>
+                        <p class="lead">There are some fates worse than death as an enemy of the Tenno finds out firsthand. Hear what they have to say and heed their warning.</p>
+                        <span class="font-italic font-weight-bold">“So...tell me, devil. Do you understand what must be done?”</span>
+                    </div>
+                    <div class="carousel-item">
+                        <h3>13. RISING TIDE</h3>
+                        <h6>Build the Dry Dock in your Clan Dojo to assemble a Railjack with the help of a new Cephalon!</h6>
+                        <p class="lead"></p>
+                        <span class="font-italic font-weight-bold">“Aboard this Railjack, we work before we play.”</span>
+                    </div>
+                    <div class="carousel-item">
+                        <h3>14. RISING TIDE</h3>
+                        <h6>Build the Dry Dock in your Clan Dojo to assemble a Railjack with the help of a new Cephalon!</h6>
+                        <p class="lead"></p>
+                        <span class="font-italic font-weight-bold">“Aboard this Railjack, we work before we play.”</span>
+                    </div>
+                </div>
+                <ol class="carousel-indicators">
+                    <li data-target="#quests-slide" data-slide-to="0" class="active"></li>
+                    <li data-target="#quests-slide" data-slide-to="1"></li>
+                    <li data-target="#quests-slide" data-slide-to="2"></li>
+                    <li data-target="#quests-slide" data-slide-to="3"></li>
+                    <li data-target="#quests-slide" data-slide-to="4"></li>
+                    <li data-target="#quests-slide" data-slide-to="5"></li>
+                    <li data-target="#quests-slide" data-slide-to="6"></li>
+                    <li data-target="#quests-slide" data-slide-to="7"></li>
+                    <li data-target="#quests-slide" data-slide-to="8"></li>
+                    <li data-target="#quests-slide" data-slide-to="9"></li>
+                    <li data-target="#quests-slide" data-slide-to="10"></li>
+                    <li data-target="#quests-slide" data-slide-to="11"></li>
+                    <li data-target="#quests-slide" data-slide-to="12"></li>
+                    <li data-target="#quests-slide" data-slide-to="13"></li>
+                </ol>
+            </div>
+            <div class="double-lines"></div>
+        </div>
+    </section>
+    <!--END QUESTS-->
+
+    <!--START PLATINUM-->
+    <section class="platinum text-center">
+        <div class="container">
+            <h1>PRIME ACCESS</h1>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="price-box">
+                        <h2 class="text-warning">COVENANT</h2>
+                        <p>$ 193.99</p>
+                        <ul class="list-unstyled">
+                            <li>3990 Platinum</li>
+                            <li>Harrow Prime</li>
+                            <li>Exclusive Harrow Prime Profile Glyphs</li>
+                            <li>Scourge Prime And Knell Prime</li>
+                            <li>Nave Prime Syandana</li>
+                            <li>Templar Prime Suit</li>
+                            <li>90 Day Resource Booster</li>
+                            <li>90 Day Affinity Booster</li>
+                        </ul>
+                        <a href="" class="btn btn-warning">Buy Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="price-box">
+                        <h2 class="text-info">THURIBLE</h2>
+                        <p>$ 79.99</p>
+                        <ul class="list-unstyled">
+                            <li>2625 Platinum</li>
+                            <li>Harrow Prime</li>
+                            <li>Exclusive Harrow Prime Profile Glyphs</li>
+                            <li>Scourge Prime And Knell Prime</li>
+                        </ul>
+                        <a href="" class="btn btn-info">Buy Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="price-box">
+                        <h2 class="text-danger">PENANCE</h2>
+                        <p>$ 49.99</p>
+                        <ul class="list-unstyled">
+                            <li>1050 Platinum</li>
+                            <li>Scourge Prime And Knell Prime</li>
+                        </ul>
+                        <a href="" class="btn btn-danger">Buy Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="price-box">
+                        <h2 class="text-secondary">PRIME ACCESSORIES</h2>
+                        <p>$ 19.99</p>
+                        <ul class="list-unstyled">
+                            <li>Nave Prime Syandana</li>
+                            <li>Templar Prime Suit</li>
+                            <li>90 Day Resource Booster</li>
+                            <li>90 Day Affinity Booster</li>
+                        </ul>
+                        <a href="" class="btn btn-secondary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END PLATINUM-->
+
+    <!--START UPDATES-->
+    <section class="updates text-center">
+        <div class="platforms">
+            <div class="container">
+                <h1>LATEST WARFRAME UPDATES</h1>
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="platform">
+                            <img class="bg-dark rounded-circle p-2" src="images/pc.png" alt="PC">
+                            <h3>The New War: Hotfix 31.0.11</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="platform">
+                            <img class="bg-success rounded-circle p-2" src="images/xb.png" alt="XBOX">
+                            <h3>XBOX The New War: Hotfix #7</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="platform">
+                            <img class="bg-primary rounded-circle p-2" src="images/ps.png" alt="PS">
+                            <h3>PSN The New War: Hotfix #6</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="platform">
+                            <img class="bg-danger rounded-circle p-2" src="images/sw.png" alt="NSW">
+                            <h3>NSW The New War: Hotfix #8</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END UPDATES-->
+
+    <!--START SUBSCRIBE-->
+    <section class="subscribe text-center">
+        <div class="container">
+            <h1>keep in touch</h1>
+            <p class="lead">sign up for news</p>
+            <form class="form-inline">
+                <input type="text" class="form-control form-control-lg" placeholder="Write Your Email...">
+                <button class="btn btn-danger btn-lg"><span>Subscribe</span></button>
+            </form>
+        </div>
+    </section>
+    <!--END SUBSCRIBE-->
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+</body>
+</html>
